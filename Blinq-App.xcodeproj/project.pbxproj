@@ -12,6 +12,16 @@
 		F6A23F2426C396BE008021BA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F2326C396BE008021BA /* CustomButton.swift */; };
 		F6A23F2926C39C76008021BA /* 16856-spacial-broccoli.gif in Resources */ = {isa = PBXBuildFile; fileRef = F6A23F2726C39C76008021BA /* 16856-spacial-broccoli.gif */; };
 		F6A23F2A26C39C76008021BA /* 62546-walking-broccoli.gif in Resources */ = {isa = PBXBuildFile; fileRef = F6A23F2826C39C76008021BA /* 62546-walking-broccoli.gif */; };
+		F6A23F2C26C3A598008021BA /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F2B26C3A598008021BA /* APIPath.swift */; };
+		F6A23F2E26C3A5A2008021BA /* APILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F2D26C3A5A2008021BA /* APILoader.swift */; };
+		F6A23F3026C3A5AE008021BA /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F2F26C3A5AE008021BA /* APIHandler.swift */; };
+		F6A23F3226C3A5C2008021BA /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F3126C3A5C2008021BA /* APIEnvironment.swift */; };
+		F6A23F3426C3A632008021BA /* RequestHandler+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F3326C3A632008021BA /* RequestHandler+Extension.swift */; };
+		F6A23F3626C3A641008021BA /* ResponseHandler+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F3526C3A641008021BA /* ResponseHandler+Extension.swift */; };
+		F6A23F3826C3A707008021BA /* SubmitInvitationRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F3726C3A707008021BA /* SubmitInvitationRequestAPI.swift */; };
+		F6A23F3A26C3ABDC008021BA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F3926C3ABDC008021BA /* HomeViewModel.swift */; };
+		F6A23F3D26C3AD3A008021BA /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F3C26C3AD3A008021BA /* ResponseModel.swift */; };
+		F6A23F3F26C3AED2008021BA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F3E26C3AED2008021BA /* HomeView.swift */; };
 		F6A4888C26C368F700A07C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888B26C368F700A07C44 /* AppDelegate.swift */; };
 		F6A4888E26C368F700A07C44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888D26C368F700A07C44 /* SceneDelegate.swift */; };
 		F6A4889026C368F700A07C44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888F26C368F700A07C44 /* HomeViewController.swift */; };
@@ -29,6 +39,16 @@
 		F6A23F2326C396BE008021BA /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F6A23F2726C39C76008021BA /* 16856-spacial-broccoli.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "16856-spacial-broccoli.gif"; path = "Blinq-App/Images/16856-spacial-broccoli.gif"; sourceTree = SOURCE_ROOT; };
 		F6A23F2826C39C76008021BA /* 62546-walking-broccoli.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "62546-walking-broccoli.gif"; path = "Blinq-App/Images/62546-walking-broccoli.gif"; sourceTree = SOURCE_ROOT; };
+		F6A23F2B26C3A598008021BA /* APIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
+		F6A23F2D26C3A5A2008021BA /* APILoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILoader.swift; sourceTree = "<group>"; };
+		F6A23F2F26C3A5AE008021BA /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		F6A23F3126C3A5C2008021BA /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
+		F6A23F3326C3A632008021BA /* RequestHandler+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestHandler+Extension.swift"; sourceTree = "<group>"; };
+		F6A23F3526C3A641008021BA /* ResponseHandler+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResponseHandler+Extension.swift"; sourceTree = "<group>"; };
+		F6A23F3726C3A707008021BA /* SubmitInvitationRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitInvitationRequestAPI.swift; sourceTree = "<group>"; };
+		F6A23F3926C3ABDC008021BA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F6A23F3C26C3AD3A008021BA /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		F6A23F3E26C3AED2008021BA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F6A4888826C368F700A07C44 /* Blinq-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinq-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A4888B26C368F700A07C44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6A4888D26C368F700A07C44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +90,14 @@
 			path = CustomUI;
 			sourceTree = "<group>";
 		};
+		F6A23F3B26C3AD2E008021BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6A23F3C26C3AD3A008021BA /* ResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F6A4887F26C368F700A07C44 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +117,7 @@
 		F6A4888A26C368F700A07C44 /* Blinq-App */ = {
 			isa = PBXGroup;
 			children = (
+				F6A23F3B26C3AD2E008021BA /* Model */,
 				F6A23F2026C38D2E008021BA /* CustomUI */,
 				F6A23F1D26C37D7D008021BA /* Extension */,
 				F6A488A426C3699800A07C44 /* Resources */,
@@ -96,6 +125,7 @@
 				F6A488A126C3697D00A07C44 /* Network */,
 				F6A488A026C3697100A07C44 /* ViewController */,
 				F6A4889F26C3696700A07C44 /* ViewModel */,
+				F6A23F3E26C3AED2008021BA /* HomeView.swift */,
 			);
 			path = "Blinq-App";
 			sourceTree = "<group>";
@@ -103,6 +133,7 @@
 		F6A4889F26C3696700A07C44 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F6A23F3926C3ABDC008021BA /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -118,6 +149,12 @@
 		F6A488A126C3697D00A07C44 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F6A23F2B26C3A598008021BA /* APIPath.swift */,
+				F6A23F2D26C3A5A2008021BA /* APILoader.swift */,
+				F6A23F2F26C3A5AE008021BA /* APIHandler.swift */,
+				F6A23F3126C3A5C2008021BA /* APIEnvironment.swift */,
+				F6A23F3326C3A632008021BA /* RequestHandler+Extension.swift */,
+				F6A23F3526C3A641008021BA /* ResponseHandler+Extension.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -125,6 +162,7 @@
 		F6A488A226C3698A00A07C44 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				F6A23F3726C3A707008021BA /* SubmitInvitationRequestAPI.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -226,11 +264,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A23F2C26C3A598008021BA /* APIPath.swift in Sources */,
+				F6A23F3826C3A707008021BA /* SubmitInvitationRequestAPI.swift in Sources */,
 				F6A4889026C368F700A07C44 /* HomeViewController.swift in Sources */,
 				F6A4888C26C368F700A07C44 /* AppDelegate.swift in Sources */,
+				F6A23F3626C3A641008021BA /* ResponseHandler+Extension.swift in Sources */,
+				F6A23F3426C3A632008021BA /* RequestHandler+Extension.swift in Sources */,
 				F6A23F2426C396BE008021BA /* CustomButton.swift in Sources */,
 				F6A4888E26C368F700A07C44 /* SceneDelegate.swift in Sources */,
 				F6A23F1F26C37D92008021BA /* UIColor+Extension.swift in Sources */,
+				F6A23F3A26C3ABDC008021BA /* HomeViewModel.swift in Sources */,
+				F6A23F3026C3A5AE008021BA /* APIHandler.swift in Sources */,
+				F6A23F2E26C3A5A2008021BA /* APILoader.swift in Sources */,
+				F6A23F3226C3A5C2008021BA /* APIEnvironment.swift in Sources */,
+				F6A23F3F26C3AED2008021BA /* HomeView.swift in Sources */,
+				F6A23F3D26C3AD3A008021BA /* ResponseModel.swift in Sources */,
 				F6A23F2226C38D3B008021BA /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -54,18 +54,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpBackGround()
-        view.addSubview(fullNameTextField)
-        view.addSubview(emailAddress)
-        view.addSubview(confirmEmailAddress)
-        view.addSubview(submitButton)
-        view.addSubview(resetButton)
-        //        view.addSubview(backgroundAnimationView)
-
-//        // Do any additional setup after loading the view.
-//        playBackgroundAnimation()
+        setUpAddElements()
         setUpLayoutOnStart()
-        
-        
     }
     
     @objc
@@ -96,11 +86,6 @@ class HomeViewController: UIViewController {
     }
 
     func setUpLayoutOnStart() {
-        
-//        backgroundAnimationView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-//        backgroundAnimationView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-//        backgroundAnimationView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-//        backgroundAnimationView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
         fullNameTextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40).isActive = true
         fullNameTextField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
@@ -136,6 +121,14 @@ class HomeViewController: UIViewController {
         gradientLayer.shouldRasterize = true
         view.layer.addSublayer(gradientLayer)
     }
+    
+    private func setUpAddElements() {
+        view.addSubview(fullNameTextField)
+        view.addSubview(emailAddress)
+        view.addSubview(confirmEmailAddress)
+        view.addSubview(submitButton)
+        view.addSubview(resetButton)
+    }
 }
 
 extension HomeViewController: UITextFieldDelegate {
@@ -155,8 +148,7 @@ extension HomeViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if (textField == confirmEmailAddress) {
-            if (confirmEmailAddress.text == emailAddress.text) {
-                print("Cool so this works!")
+            if (confirmEmailAddress.text == emailAddress.text && fullNameTextField.text!.count > 0) {
                 submitButton.isEnabled = true
             }
         }
