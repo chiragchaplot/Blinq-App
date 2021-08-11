@@ -3,27 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6A23F1F26C37D92008021BA /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F1E26C37D92008021BA /* UIColor+Extension.swift */; };
+		F6A23F2226C38D3B008021BA /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F2126C38D3B008021BA /* CustomTextField.swift */; };
+		F6A23F2426C396BE008021BA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F2326C396BE008021BA /* CustomButton.swift */; };
+		F6A23F2926C39C76008021BA /* 16856-spacial-broccoli.gif in Resources */ = {isa = PBXBuildFile; fileRef = F6A23F2726C39C76008021BA /* 16856-spacial-broccoli.gif */; };
+		F6A23F2A26C39C76008021BA /* 62546-walking-broccoli.gif in Resources */ = {isa = PBXBuildFile; fileRef = F6A23F2826C39C76008021BA /* 62546-walking-broccoli.gif */; };
 		F6A4888C26C368F700A07C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888B26C368F700A07C44 /* AppDelegate.swift */; };
 		F6A4888E26C368F700A07C44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888D26C368F700A07C44 /* SceneDelegate.swift */; };
-		F6A4889026C368F700A07C44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888F26C368F700A07C44 /* ViewController.swift */; };
+		F6A4889026C368F700A07C44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888F26C368F700A07C44 /* HomeViewController.swift */; };
 		F6A4889326C368F700A07C44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A4889126C368F700A07C44 /* Main.storyboard */; };
 		F6A4889526C368FB00A07C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A4889426C368FB00A07C44 /* Assets.xcassets */; };
 		F6A4889826C368FB00A07C44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A4889626C368FB00A07C44 /* LaunchScreen.storyboard */; };
+		F6A488A726C36C2900A07C44 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F6A488A626C36C2900A07C44 /* Lottie */; };
+		F6A488AA26C36DBA00A07C44 /* spacial-broccoli.json in Resources */ = {isa = PBXBuildFile; fileRef = F6A488A826C36DBA00A07C44 /* spacial-broccoli.json */; };
+		F6A488AB26C36DBA00A07C44 /* walking-broccoli.json in Resources */ = {isa = PBXBuildFile; fileRef = F6A488A926C36DBA00A07C44 /* walking-broccoli.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6A23F1E26C37D92008021BA /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F6A23F2126C38D3B008021BA /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F6A23F2326C396BE008021BA /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F6A23F2726C39C76008021BA /* 16856-spacial-broccoli.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "16856-spacial-broccoli.gif"; path = "Blinq-App/Images/16856-spacial-broccoli.gif"; sourceTree = SOURCE_ROOT; };
+		F6A23F2826C39C76008021BA /* 62546-walking-broccoli.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "62546-walking-broccoli.gif"; path = "Blinq-App/Images/62546-walking-broccoli.gif"; sourceTree = SOURCE_ROOT; };
 		F6A4888826C368F700A07C44 /* Blinq-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinq-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A4888B26C368F700A07C44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6A4888D26C368F700A07C44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F6A4888F26C368F700A07C44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6A4888F26C368F700A07C44 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F6A4889226C368F700A07C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6A4889426C368FB00A07C44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6A4889726C368FB00A07C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6A4889926C368FB00A07C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A488A826C36DBA00A07C44 /* spacial-broccoli.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "spacial-broccoli.json"; path = "Blinq-App/Images/spacial-broccoli.json"; sourceTree = SOURCE_ROOT; };
+		F6A488A926C36DBA00A07C44 /* walking-broccoli.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "walking-broccoli.json"; path = "Blinq-App/Images/walking-broccoli.json"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +46,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A488A726C36C2900A07C44 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6A23F1D26C37D7D008021BA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F6A23F1E26C37D92008021BA /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F6A23F2026C38D2E008021BA /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				F6A23F2126C38D3B008021BA /* CustomTextField.swift */,
+				F6A23F2326C396BE008021BA /* CustomButton.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
 		F6A4887F26C368F700A07C44 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +89,61 @@
 		F6A4888A26C368F700A07C44 /* Blinq-App */ = {
 			isa = PBXGroup;
 			children = (
+				F6A23F2026C38D2E008021BA /* CustomUI */,
+				F6A23F1D26C37D7D008021BA /* Extension */,
+				F6A488A426C3699800A07C44 /* Resources */,
+				F6A488A226C3698A00A07C44 /* Domain */,
+				F6A488A126C3697D00A07C44 /* Network */,
+				F6A488A026C3697100A07C44 /* ViewController */,
+				F6A4889F26C3696700A07C44 /* ViewModel */,
+			);
+			path = "Blinq-App";
+			sourceTree = "<group>";
+		};
+		F6A4889F26C3696700A07C44 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F6A488A026C3697100A07C44 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F6A4888F26C368F700A07C44 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F6A488A126C3697D00A07C44 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F6A488A226C3698A00A07C44 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F6A488A426C3699800A07C44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6A23F2726C39C76008021BA /* 16856-spacial-broccoli.gif */,
+				F6A23F2826C39C76008021BA /* 62546-walking-broccoli.gif */,
+				F6A488A826C36DBA00A07C44 /* spacial-broccoli.json */,
+				F6A488A926C36DBA00A07C44 /* walking-broccoli.json */,
 				F6A4888B26C368F700A07C44 /* AppDelegate.swift */,
 				F6A4888D26C368F700A07C44 /* SceneDelegate.swift */,
-				F6A4888F26C368F700A07C44 /* ViewController.swift */,
 				F6A4889126C368F700A07C44 /* Main.storyboard */,
 				F6A4889426C368FB00A07C44 /* Assets.xcassets */,
 				F6A4889626C368FB00A07C44 /* LaunchScreen.storyboard */,
 				F6A4889926C368FB00A07C44 /* Info.plist */,
 			);
-			path = "Blinq-App";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +162,9 @@
 			dependencies = (
 			);
 			name = "Blinq-App";
+			packageProductDependencies = (
+				F6A488A626C36C2900A07C44 /* Lottie */,
+			);
 			productName = "Blinq-App";
 			productReference = F6A4888826C368F700A07C44 /* Blinq-App.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +192,9 @@
 				Base,
 			);
 			mainGroup = F6A4887F26C368F700A07C44;
+			packageReferences = (
+				F6A488A526C36C2900A07C44 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = F6A4888926C368F700A07C44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -124,9 +209,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A23F2926C39C76008021BA /* 16856-spacial-broccoli.gif in Resources */,
 				F6A4889826C368FB00A07C44 /* LaunchScreen.storyboard in Resources */,
+				F6A23F2A26C39C76008021BA /* 62546-walking-broccoli.gif in Resources */,
+				F6A488AA26C36DBA00A07C44 /* spacial-broccoli.json in Resources */,
 				F6A4889526C368FB00A07C44 /* Assets.xcassets in Resources */,
 				F6A4889326C368F700A07C44 /* Main.storyboard in Resources */,
+				F6A488AB26C36DBA00A07C44 /* walking-broccoli.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +226,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6A4889026C368F700A07C44 /* ViewController.swift in Sources */,
+				F6A4889026C368F700A07C44 /* HomeViewController.swift in Sources */,
 				F6A4888C26C368F700A07C44 /* AppDelegate.swift in Sources */,
+				F6A23F2426C396BE008021BA /* CustomButton.swift in Sources */,
 				F6A4888E26C368F700A07C44 /* SceneDelegate.swift in Sources */,
+				F6A23F1F26C37D92008021BA /* UIColor+Extension.swift in Sources */,
+				F6A23F2226C38D3B008021BA /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +291,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -260,6 +353,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -287,16 +381,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 7TCT482N32;
-				INFOPLIST_FILE = "Blinq-App/Info.plist";
+				INFOPLIST_FILE = "Blinq-App/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chazzit.Blinq-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,16 +402,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 7TCT482N32;
-				INFOPLIST_FILE = "Blinq-App/Info.plist";
+				INFOPLIST_FILE = "Blinq-App/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chazzit.Blinq-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -341,6 +439,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6A488A526C36C2900A07C44 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6A488A626C36C2900A07C44 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6A488A526C36C2900A07C44 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6A4888026C368F700A07C44 /* Project object */;
 }
