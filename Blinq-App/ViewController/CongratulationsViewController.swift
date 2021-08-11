@@ -53,7 +53,7 @@ class CongratulationsViewController: UIViewController {
     }
     
     func addNavigationBar() {
-        self.title = "Invitation Booked"
+        self.title = "Invitation Requested"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(dismissStopsNearAddressViewController))
     }
     

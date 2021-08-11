@@ -16,6 +16,7 @@ class CustomButton: UIButton {
     init(_ title: String) {
         super.init(frame: .zero)
         self.translatesAutoresizingMaskIntoConstraints = false
+        self.adjustsImageSizeForAccessibilityContentSizeCategory = true
         self.layer.cornerRadius = 10
         self.layer.borderWidth = 1
         self.clipsToBounds = true

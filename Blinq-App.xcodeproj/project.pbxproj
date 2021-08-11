@@ -24,6 +24,8 @@
 		F6A23F4426C3C97A008021BA /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F4326C3C97A008021BA /* RequestModel.swift */; };
 		F6A23F4626C40249008021BA /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F4526C40249008021BA /* CongratulationsViewController.swift */; };
 		F6A23F4826C40843008021BA /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = F6A23F4726C40843008021BA /* confetti.json */; };
+		F6A23F4A26C41D36008021BA /* RegistrationCancelled.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F4926C41D36008021BA /* RegistrationCancelled.swift */; };
+		F6A23F4C26C41DAC008021BA /* 10281-bye-bye.json in Resources */ = {isa = PBXBuildFile; fileRef = F6A23F4B26C41DAC008021BA /* 10281-bye-bye.json */; };
 		F6A4888C26C368F700A07C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888B26C368F700A07C44 /* AppDelegate.swift */; };
 		F6A4888E26C368F700A07C44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888D26C368F700A07C44 /* SceneDelegate.swift */; };
 		F6A4889026C368F700A07C44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888F26C368F700A07C44 /* HomeViewController.swift */; };
@@ -53,6 +55,8 @@
 		F6A23F4326C3C97A008021BA /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 		F6A23F4526C40249008021BA /* CongratulationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
 		F6A23F4726C40843008021BA /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = confetti.json; path = "Blinq-App/Images/confetti.json"; sourceTree = SOURCE_ROOT; };
+		F6A23F4926C41D36008021BA /* RegistrationCancelled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCancelled.swift; sourceTree = "<group>"; };
+		F6A23F4B26C41DAC008021BA /* 10281-bye-bye.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "10281-bye-bye.json"; path = "Blinq-App/Images/10281-bye-bye.json"; sourceTree = SOURCE_ROOT; };
 		F6A4888826C368F700A07C44 /* Blinq-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinq-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A4888B26C368F700A07C44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6A4888D26C368F700A07C44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 			children = (
 				F6A4888F26C368F700A07C44 /* HomeViewController.swift */,
 				F6A23F4526C40249008021BA /* CongratulationsViewController.swift */,
+				F6A23F4926C41D36008021BA /* RegistrationCancelled.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 		F6A488A426C3699800A07C44 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F6A23F4B26C41DAC008021BA /* 10281-bye-bye.json */,
 				F6A23F4726C40843008021BA /* confetti.json */,
 				F6A23F2726C39C76008021BA /* 16856-spacial-broccoli.gif */,
 				F6A23F2826C39C76008021BA /* 62546-walking-broccoli.gif */,
@@ -258,6 +264,7 @@
 				F6A4889826C368FB00A07C44 /* LaunchScreen.storyboard in Resources */,
 				F6A23F2A26C39C76008021BA /* 62546-walking-broccoli.gif in Resources */,
 				F6A488AA26C36DBA00A07C44 /* spacial-broccoli.json in Resources */,
+				F6A23F4C26C41DAC008021BA /* 10281-bye-bye.json in Resources */,
 				F6A4889526C368FB00A07C44 /* Assets.xcassets in Resources */,
 				F6A4889326C368F700A07C44 /* Main.storyboard in Resources */,
 				F6A488AB26C36DBA00A07C44 /* walking-broccoli.json in Resources */,
@@ -279,6 +286,7 @@
 				F6A23F3426C3A632008021BA /* RequestHandler+Extension.swift in Sources */,
 				F6A23F2426C396BE008021BA /* CustomButton.swift in Sources */,
 				F6A23F4426C3C97A008021BA /* RequestModel.swift in Sources */,
+				F6A23F4A26C41D36008021BA /* RegistrationCancelled.swift in Sources */,
 				F6A4888E26C368F700A07C44 /* SceneDelegate.swift in Sources */,
 				F6A23F1F26C37D92008021BA /* UIColor+Extension.swift in Sources */,
 				F6A23F3A26C3ABDC008021BA /* HomeViewModel.swift in Sources */,

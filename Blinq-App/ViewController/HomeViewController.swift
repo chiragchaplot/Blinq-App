@@ -53,18 +53,24 @@ class HomeViewController: UIViewController {
         return submitButton
     }()
     
+    lazy var cancelButton: CustomButton = {
+        var button = CustomButton("Cancel Invite")
+        button.addTarget(self, action: #selector(cancelInvite), for: .touchUpInside)
+        return button
+    }()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpBackGround()
-        setUpAddElements()
-        setUpLayoutOnStart()
-        print("Oh Yeah ViewDidLoad")
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print("Oh Yeah ViewWillAppear")
+        let defaults = UserDefaults.standard
+        if defaults.bool(forKey: "inviteRequested") {
+            setUpFilled()
+        } else {
+            setUpEmpty()
+        }
+        
     }
     
     @objc
@@ -85,8 +91,9 @@ class HomeViewController: UIViewController {
                 }
             }
             
-            if let result = result  {
+            if let _ = result  {
                 DispatchQueue.main.async {
+                    self.setUpUserDefault()
                     let rootVC = CongratulationsViewController()
                     let navVC = UINavigationController(rootViewController: rootVC)
                     navVC.modalPresentationStyle = .popover
@@ -180,11 +187,13 @@ class HomeViewController: UIViewController {
         backgroundAnimationView.removeFromSuperview()
     }
     
-    private func changeView() {
-        backgroundAnimationView.removeFromSuperview()
-        resetButton.removeFromSuperview()
-        submitButton.removeFromSuperview()
+    func setUpUserDefault() {
+        let defaults = UserDefaults.standard
+        defaults.setValue(true, forKey: "inviteRequested")
+        defaults.setValue(fullNameTextField.text, forKey: "fullName")
+        defaults.setValue(emailAddress.text, forKey: "email")
     }
+    
 }
 
 extension HomeViewController: UITextFieldDelegate {
@@ -215,5 +224,103 @@ extension HomeViewController: UITextFieldDelegate {
         emailAddress.text = ""
         confirmEmailAddress.text = ""
         submitButton.isEnabled = false  
+    }
+    
+    func setUpEmpty() {
+        setUpAddElements()
+        setUpLayoutOnStart()
+        enableTextFields()
+    }
+    
+    func enableTextFields() {
+        fullNameTextField.text = ""
+        fullNameTextField.isEnabled = true
+        
+        emailAddress.text = ""
+        emailAddress.isEnabled = true
+        
+        confirmEmailAddress.text = ""
+        confirmEmailAddress.isEnabled = true
+    }
+}
+
+// MARK: - Layout When User Registered
+extension HomeViewController {
+    
+    
+    private func changeView() {
+        removeElements()
+        setUpFilled()
+    }
+    
+    private func setUpFilled() {
+        addNewElements()
+        disableTextFields()
+        setUpLayout_Filled()
+    }
+    
+    private func removeElements() {
+        backgroundAnimationView.removeFromSuperview()
+        resetButton.removeFromSuperview()
+        submitButton.removeFromSuperview()
+        confirmEmailAddress.removeFromSuperview()
+        fullNameTextField.removeFromSuperview()
+        emailAddress.removeFromSuperview()
+    }
+    
+    private func disableTextFields() {
+        emailAddress.isEnabled = false
+        fullNameTextField.isEnabled = false
+    }
+    
+    private func addNewElements() {
+        view.addSubview(fullNameTextField)
+        view.addSubview(emailAddress)
+        view.addSubview(cancelButton)
+    }
+    
+    private func setUpLayout_Filled() {
+        let defaults = UserDefaults.standard
+        fullNameTextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40).isActive = true
+        fullNameTextField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
+        fullNameTextField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
+        fullNameTextField.text = defaults.string(forKey: "fullName")
+        
+        
+        emailAddress.topAnchor.constraint(equalTo: fullNameTextField.bottomAnchor, constant: 40).isActive = true
+        emailAddress.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
+        emailAddress.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
+        emailAddress.text = defaults.string(forKey: "email")
+
+        
+        
+        cancelButton.topAnchor.constraint(equalTo: emailAddress.bottomAnchor, constant: 40).isActive = true
+        cancelButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
+        cancelButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
+        cancelButton.backgroundColor = .black
+    }
+    
+    @objc private func cancelInvite() {
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: "inviteRequested")
+        removeRegisteredScreen()
+        showByeByeScreen()
+        
+    }
+    
+    func removeRegisteredScreen() {
+        fullNameTextField.removeFromSuperview()
+        emailAddress.removeFromSuperview()
+        cancelButton.removeFromSuperview()
+    }
+    
+    func showByeByeScreen() {
+        let rootVC = RegistrationCancelledViewController()
+        let navVC = UINavigationController(rootViewController: rootVC)
+        navVC.modalPresentationStyle = .popover
+        self.present(navVC,animated: true,completion: {
+            self.removeRegisteredScreen()
+            self.setUpEmpty()
+        })
     }
 }

@@ -17,7 +17,9 @@ class CustomTextField: UITextField {
         super.init(frame: .zero)
         self.backgroundColor = UIColor(hex: "#9ae16d")
         self.textColor = UIColor.white
+        
         self.translatesAutoresizingMaskIntoConstraints = false
+        self.adjustsFontForContentSizeCategory = true
         self.layer.cornerRadius = 10
         self.layer.borderWidth = 1
         self.clipsToBounds = true
