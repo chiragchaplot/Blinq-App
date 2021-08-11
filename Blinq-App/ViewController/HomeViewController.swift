@@ -194,6 +194,12 @@ class HomeViewController: UIViewController {
         defaults.setValue(emailAddress.text, forKey: "email")
     }
     
+    func isValidEmail(email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
+    }
+    
 }
 
 extension HomeViewController: UITextFieldDelegate {
@@ -213,8 +219,11 @@ extension HomeViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if (textField == confirmEmailAddress) {
-            if (confirmEmailAddress.text == emailAddress.text && fullNameTextField.text!.count > 3) {
-                submitButton.isEnabled = true
+            if (confirmEmailAddress.text == emailAddress.text && fullNameTextField.text!.count > 3 ) {
+                guard let emailCheck = emailAddress.text else { return }
+                if isValidEmail(email: emailCheck) {
+                    submitButton.isEnabled = true
+                }
             }
         }
     }

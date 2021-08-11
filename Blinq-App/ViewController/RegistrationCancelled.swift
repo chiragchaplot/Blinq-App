@@ -24,7 +24,7 @@ class RegistrationCancelledViewController: UIViewController {
         backgroundAnimationView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
         
-        backgroundAnimationView.animation = Animation.named("10281-bye-bye")
+        backgroundAnimationView.animation = Animation.named("cry")
         backgroundAnimationView.play(fromProgress: 0, toProgress: 1, loopMode: .loop, completion: {
             finished in
             
