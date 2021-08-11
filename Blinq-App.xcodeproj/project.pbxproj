@@ -22,6 +22,8 @@
 		F6A23F3A26C3ABDC008021BA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F3926C3ABDC008021BA /* HomeViewModel.swift */; };
 		F6A23F3D26C3AD3A008021BA /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F3C26C3AD3A008021BA /* ResponseModel.swift */; };
 		F6A23F4426C3C97A008021BA /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F4326C3C97A008021BA /* RequestModel.swift */; };
+		F6A23F4626C40249008021BA /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F4526C40249008021BA /* CongratulationsViewController.swift */; };
+		F6A23F4826C40843008021BA /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = F6A23F4726C40843008021BA /* confetti.json */; };
 		F6A4888C26C368F700A07C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888B26C368F700A07C44 /* AppDelegate.swift */; };
 		F6A4888E26C368F700A07C44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888D26C368F700A07C44 /* SceneDelegate.swift */; };
 		F6A4889026C368F700A07C44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888F26C368F700A07C44 /* HomeViewController.swift */; };
@@ -49,6 +51,8 @@
 		F6A23F3926C3ABDC008021BA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F6A23F3C26C3AD3A008021BA /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		F6A23F4326C3C97A008021BA /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		F6A23F4526C40249008021BA /* CongratulationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
+		F6A23F4726C40843008021BA /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = confetti.json; path = "Blinq-App/Images/confetti.json"; sourceTree = SOURCE_ROOT; };
 		F6A4888826C368F700A07C44 /* Blinq-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinq-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A4888B26C368F700A07C44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6A4888D26C368F700A07C44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				F6A4888F26C368F700A07C44 /* HomeViewController.swift */,
+				F6A23F4526C40249008021BA /* CongratulationsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 		F6A488A426C3699800A07C44 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F6A23F4726C40843008021BA /* confetti.json */,
 				F6A23F2726C39C76008021BA /* 16856-spacial-broccoli.gif */,
 				F6A23F2826C39C76008021BA /* 62546-walking-broccoli.gif */,
 				F6A488A826C36DBA00A07C44 /* spacial-broccoli.json */,
@@ -248,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6A23F2926C39C76008021BA /* 16856-spacial-broccoli.gif in Resources */,
+				F6A23F4826C40843008021BA /* confetti.json in Resources */,
 				F6A4889826C368FB00A07C44 /* LaunchScreen.storyboard in Resources */,
 				F6A23F2A26C39C76008021BA /* 62546-walking-broccoli.gif in Resources */,
 				F6A488AA26C36DBA00A07C44 /* spacial-broccoli.json in Resources */,
@@ -277,6 +284,7 @@
 				F6A23F3A26C3ABDC008021BA /* HomeViewModel.swift in Sources */,
 				F6A23F3026C3A5AE008021BA /* APIHandler.swift in Sources */,
 				F6A23F2E26C3A5A2008021BA /* APILoader.swift in Sources */,
+				F6A23F4626C40249008021BA /* CongratulationsViewController.swift in Sources */,
 				F6A23F3226C3A5C2008021BA /* APIEnvironment.swift in Sources */,
 				F6A23F3D26C3AD3A008021BA /* ResponseModel.swift in Sources */,
 				F6A23F2226C38D3B008021BA /* CustomTextField.swift in Sources */,

@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     lazy var backgroundAnimationView: AnimationView = {
         let animationView = AnimationView()
         animationView.translatesAutoresizingMaskIntoConstraints = false
+        animationView.tag = 100
         return animationView
     }()
     
@@ -58,17 +59,23 @@ class HomeViewController: UIViewController {
         setUpBackGround()
         setUpAddElements()
         setUpLayoutOnStart()
+        print("Oh Yeah ViewDidLoad")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("Oh Yeah ViewWillAppear")
     }
     
     @objc
     private func submitDetails(){
         print("Submit Button Pressed")
-        backgroundAnimationView.play()
+        showAnimation()
         let param = ["name":fullNameTextField.text, "email":emailAddress.text]
         homeVM.submitInvitation(param: param as [String : Any], completion: {
             (result, error) in
-            
-            if let error = error {
+//            self.stopAnimation()
+            if let _ = error {
                 DispatchQueue.main.async {
                     let defaults = UserDefaults.standard
                     let alert = UIAlertController(title: "Error", message: defaults.value(forKey: "error") as! String, preferredStyle: UIAlertController.Style.alert)
@@ -80,13 +87,13 @@ class HomeViewController: UIViewController {
             
             if let result = result  {
                 DispatchQueue.main.async {
+                    let rootVC = CongratulationsViewController()
+                    let navVC = UINavigationController(rootViewController: rootVC)
+                    navVC.modalPresentationStyle = .popover
+                    self.present(navVC,animated: true,completion: {
+                        self.changeView()
+                    })
                     
-                    print(result)
-                    let alert = UIAlertController(title: "Success", message: "Invitation Sent", preferredStyle: UIAlertController.Style.alert)
-                    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-                    alert.addAction(cancelAction)
-    
-                    self.present(alert, animated: true, completion: nil)
                 }
             }
         })
@@ -139,7 +146,7 @@ class HomeViewController: UIViewController {
         submitButton.topAnchor.constraint(equalTo: confirmEmailAddress.bottomAnchor, constant: 40).isActive = true
         submitButton.leadingAnchor.constraint(equalTo: view.centerXAnchor, constant: 20).isActive = true
         submitButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
-        
+
     }
     
     private func setUpBackGround() {
@@ -156,6 +163,27 @@ class HomeViewController: UIViewController {
         view.addSubview(confirmEmailAddress)
         view.addSubview(submitButton)
         view.addSubview(resetButton)
+    }
+    
+    private func showAnimation() {
+        view.addSubview(backgroundAnimationView)
+        backgroundAnimationView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        backgroundAnimationView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        backgroundAnimationView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        backgroundAnimationView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        backgroundAnimationView.animation = Animation.named("spacial-broccoli")
+        backgroundAnimationView.play(fromProgress: 0, toProgress: 1, loopMode: .loop, completion: nil)
+    }
+    
+    private func stopAnimation() {
+        backgroundAnimationView.stop()
+        backgroundAnimationView.removeFromSuperview()
+    }
+    
+    private func changeView() {
+        backgroundAnimationView.removeFromSuperview()
+        resetButton.removeFromSuperview()
+        submitButton.removeFromSuperview()
     }
 }
 
@@ -176,7 +204,7 @@ extension HomeViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if (textField == confirmEmailAddress) {
-            if (confirmEmailAddress.text == emailAddress.text && fullNameTextField.text!.count > 0) {
+            if (confirmEmailAddress.text == emailAddress.text && fullNameTextField.text!.count > 3) {
                 submitButton.isEnabled = true
             }
         }

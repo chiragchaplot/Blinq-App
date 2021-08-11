@@ -46,7 +46,5 @@ class SubmitInvitationRequestAPI: APIHandler {
         catch {
             return "Unknown Error"
         }
-            
-        
     }
 }
