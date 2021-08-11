@@ -15,8 +15,8 @@ extension RequestHandler {
         return components?.url ?? url
     }
     
-//    func setDefaultHeaders(request: inout URLRequest) {
-//        //No headers to include in this project
-//    }
+    func setDefaultHeaders(request: inout URLRequest) {
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+    }
 }
 

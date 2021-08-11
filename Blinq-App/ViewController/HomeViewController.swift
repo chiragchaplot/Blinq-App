@@ -10,6 +10,8 @@ import Lottie
 
 class HomeViewController: UIViewController {
     
+    var homeVM = HomeViewModel()
+    
     lazy var backgroundAnimationView: AnimationView = {
         let animationView = AnimationView()
         animationView.translatesAutoresizingMaskIntoConstraints = false
@@ -61,7 +63,33 @@ class HomeViewController: UIViewController {
     @objc
     private func submitDetails(){
         print("Submit Button Pressed")
-        backgroundAnimationView.stop()
+        backgroundAnimationView.play()
+        let param = ["name":fullNameTextField.text, "email":emailAddress.text]
+        homeVM.submitInvitation(param: param as [String : Any], completion: {
+            (result, error) in
+            
+            if let error = error {
+                DispatchQueue.main.async {
+                    let defaults = UserDefaults.standard
+                    let alert = UIAlertController(title: "Error", message: defaults.value(forKey: "error") as! String, preferredStyle: UIAlertController.Style.alert)
+                    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                    alert.addAction(cancelAction)
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
+            
+            if let result = result  {
+                DispatchQueue.main.async {
+                    
+                    print(result)
+                    let alert = UIAlertController(title: "Success", message: "Invitation Sent", preferredStyle: UIAlertController.Style.alert)
+                    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                    alert.addAction(cancelAction)
+    
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
+        })
     }
     
     @objc

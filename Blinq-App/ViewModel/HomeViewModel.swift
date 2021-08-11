@@ -19,7 +19,8 @@ class HomeViewModel {
     func submitInvitation(param: [String: Any], completion: @escaping (ResponseModel?, ServiceError?) -> ()) {
         apiLoader.loadAPIRequest(requestData: param) {
             (model, error) in
-            if let _ = error {
+            if let error = error {
+                print(error)
                 completion(nil, error)
             } else {
                 completion(model, nil)

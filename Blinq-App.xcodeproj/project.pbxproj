@@ -21,7 +21,7 @@
 		F6A23F3826C3A707008021BA /* SubmitInvitationRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F3726C3A707008021BA /* SubmitInvitationRequestAPI.swift */; };
 		F6A23F3A26C3ABDC008021BA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F3926C3ABDC008021BA /* HomeViewModel.swift */; };
 		F6A23F3D26C3AD3A008021BA /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F3C26C3AD3A008021BA /* ResponseModel.swift */; };
-		F6A23F3F26C3AED2008021BA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F3E26C3AED2008021BA /* HomeView.swift */; };
+		F6A23F4426C3C97A008021BA /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F4326C3C97A008021BA /* RequestModel.swift */; };
 		F6A4888C26C368F700A07C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888B26C368F700A07C44 /* AppDelegate.swift */; };
 		F6A4888E26C368F700A07C44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888D26C368F700A07C44 /* SceneDelegate.swift */; };
 		F6A4889026C368F700A07C44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888F26C368F700A07C44 /* HomeViewController.swift */; };
@@ -48,7 +48,7 @@
 		F6A23F3726C3A707008021BA /* SubmitInvitationRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitInvitationRequestAPI.swift; sourceTree = "<group>"; };
 		F6A23F3926C3ABDC008021BA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F6A23F3C26C3AD3A008021BA /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
-		F6A23F3E26C3AED2008021BA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F6A23F4326C3C97A008021BA /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 		F6A4888826C368F700A07C44 /* Blinq-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinq-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A4888B26C368F700A07C44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6A4888D26C368F700A07C44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				F6A23F3C26C3AD3A008021BA /* ResponseModel.swift */,
+				F6A23F4326C3C97A008021BA /* RequestModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,7 +126,6 @@
 				F6A488A126C3697D00A07C44 /* Network */,
 				F6A488A026C3697100A07C44 /* ViewController */,
 				F6A4889F26C3696700A07C44 /* ViewModel */,
-				F6A23F3E26C3AED2008021BA /* HomeView.swift */,
 			);
 			path = "Blinq-App";
 			sourceTree = "<group>";
@@ -271,13 +271,13 @@
 				F6A23F3626C3A641008021BA /* ResponseHandler+Extension.swift in Sources */,
 				F6A23F3426C3A632008021BA /* RequestHandler+Extension.swift in Sources */,
 				F6A23F2426C396BE008021BA /* CustomButton.swift in Sources */,
+				F6A23F4426C3C97A008021BA /* RequestModel.swift in Sources */,
 				F6A4888E26C368F700A07C44 /* SceneDelegate.swift in Sources */,
 				F6A23F1F26C37D92008021BA /* UIColor+Extension.swift in Sources */,
 				F6A23F3A26C3ABDC008021BA /* HomeViewModel.swift in Sources */,
 				F6A23F3026C3A5AE008021BA /* APIHandler.swift in Sources */,
 				F6A23F2E26C3A5A2008021BA /* APILoader.swift in Sources */,
 				F6A23F3226C3A5C2008021BA /* APIEnvironment.swift in Sources */,
-				F6A23F3F26C3AED2008021BA /* HomeView.swift in Sources */,
 				F6A23F3D26C3AD3A008021BA /* ResponseModel.swift in Sources */,
 				F6A23F2226C38D3B008021BA /* CustomTextField.swift in Sources */,
 			);
