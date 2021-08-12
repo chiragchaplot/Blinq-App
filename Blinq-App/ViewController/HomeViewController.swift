@@ -54,7 +54,7 @@ class HomeViewController: UIViewController {
     
     lazy var cancelButton: CustomButton = {
         var button = CustomButton("Cancel Invite")
-        button.addTarget(self, action: #selector(cancelInvite), for: .touchUpInside)
+        button.addTarget(self, action: #selector(cancelButtonPressed), for: .touchUpInside)
         return button
     }()
     
@@ -74,7 +74,6 @@ class HomeViewController: UIViewController {
     
     @objc
     private func submitDetails(){
-        print("Submit Button Pressed")
         showAnimation()
         let param = ["name":fullNameTextField.text, "email":emailAddress.text?.lowercased()]
         homeVM.submitInvitation(param: param as [String : Any], completion: {
@@ -108,7 +107,6 @@ class HomeViewController: UIViewController {
     
     @objc
     private func resetEverything(){
-        print("Reset Button Pressed")
         reset()
         backgroundAnimationView.stop()
     }
@@ -309,12 +307,23 @@ extension HomeViewController {
         
     }
     
-    @objc private func cancelInvite() {
+    @objc private func cancelButtonPressed() {
+        let alert = UIAlertController(title: "Are you sure?", message:
+                                      "Cancelling the invitation will remove you from our exclusive lists of promotions. Do you want to cancel?", preferredStyle: UIAlertController.Style.alert)
+        let noAction = UIAlertAction(title: "No", style: .cancel, handler: nil)
+        let yesAction = UIAlertAction(title: "Yes", style: .default, handler: {(alert: UIAlertAction!) in self.cancelInvite()})
+        alert.addAction(noAction)
+        alert.addAction(yesAction)
+        self.present(alert, animated: true, completion: nil)
+        
+        
+    }
+    
+    func cancelInvite() {
         let defaults = UserDefaults.standard
         defaults.removeObject(forKey: "inviteRequested")
         removeRegisteredScreen()
         showByeByeScreen()
-        
     }
     
     func removeRegisteredScreen() {
