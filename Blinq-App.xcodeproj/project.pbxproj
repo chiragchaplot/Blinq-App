@@ -34,6 +34,7 @@
 		F6A488AA26C36DBA00A07C44 /* spacial-broccoli.json in Resources */ = {isa = PBXBuildFile; fileRef = F6A488A826C36DBA00A07C44 /* spacial-broccoli.json */; };
 		F6A488AB26C36DBA00A07C44 /* walking-broccoli.json in Resources */ = {isa = PBXBuildFile; fileRef = F6A488A926C36DBA00A07C44 /* walking-broccoli.json */; };
 		F6E34F3726C4B57100297990 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E34F3626C4B57100297990 /* HomeViewControllerTests.swift */; };
+		F6E34F3926C4D74D00297990 /* logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F6E34F3826C4D74D00297990 /* logo.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		F6A488A826C36DBA00A07C44 /* spacial-broccoli.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "spacial-broccoli.json"; path = "Blinq-App/Images/spacial-broccoli.json"; sourceTree = SOURCE_ROOT; };
 		F6A488A926C36DBA00A07C44 /* walking-broccoli.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "walking-broccoli.json"; path = "Blinq-App/Images/walking-broccoli.json"; sourceTree = SOURCE_ROOT; };
 		F6E34F3626C4B57100297990 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		F6E34F3826C4D74D00297990 /* logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpeg; path = "Blinq-App/Images/logo.jpeg"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 		F6A488A426C3699800A07C44 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F6E34F3826C4D74D00297990 /* logo.jpeg */,
 				F6A23F4D26C4202E008021BA /* cry.json */,
 				F6A23F4726C40843008021BA /* confetti.json */,
 				F6A488A826C36DBA00A07C44 /* spacial-broccoli.json */,
@@ -317,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6A23F4826C40843008021BA /* confetti.json in Resources */,
+				F6E34F3926C4D74D00297990 /* logo.jpeg in Resources */,
 				F6A23F4E26C4202E008021BA /* cry.json in Resources */,
 				F6A4889826C368FB00A07C44 /* LaunchScreen.storyboard in Resources */,
 				F6A488AA26C36DBA00A07C44 /* spacial-broccoli.json in Resources */,

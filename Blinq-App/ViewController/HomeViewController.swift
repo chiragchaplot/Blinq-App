@@ -306,7 +306,7 @@ extension HomeViewController {
         cancelButton.topAnchor.constraint(equalTo: emailAddress.bottomAnchor, constant: 40).isActive = true
         cancelButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
         cancelButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
-        cancelButton.backgroundColor = .black
+        
     }
     
     @objc private func cancelInvite() {

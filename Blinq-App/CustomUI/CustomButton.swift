@@ -23,7 +23,7 @@ class CustomButton: UIButton {
         self.isAccessibilityElement = true
         self.accessibilityTraits = .button
         self.sizeToFit()
-        self.backgroundColor = UIColor(hex: "#A2F795")
+        self.backgroundColor = .black
         self.setTitle(title, for: .normal)
         //gradientButton(title, startColor: UIColor.yellow, endColor: UIColor.green)
     }
