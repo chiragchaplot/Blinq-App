@@ -128,8 +128,7 @@ class HomeViewController: UIViewController {
     }
 
     func setUpLayoutOnStart() {
-        
-        fullNameTextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40).isActive = true
+        fullNameTextField.topAnchor.constraint(equalTo: view.centerYAnchor, constant: -200).isActive = true
         fullNameTextField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
         fullNameTextField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
         fullNameTextField.becomeFirstResponder()
@@ -219,7 +218,7 @@ extension HomeViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if (textField == confirmEmailAddress) {
-            if (confirmEmailAddress.text == emailAddress.text && fullNameTextField.text!.count > 3 ) {
+            if (confirmEmailAddress.text?.uppercased() == emailAddress.text?.uppercased() && fullNameTextField.text!.count > 3 ) {
                 guard let emailCheck = emailAddress.text else { return }
                 if isValidEmail(email: emailCheck) {
                     submitButton.isEnabled = true

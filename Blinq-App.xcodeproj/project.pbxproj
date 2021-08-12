@@ -24,16 +24,27 @@
 		F6A23F4826C40843008021BA /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = F6A23F4726C40843008021BA /* confetti.json */; };
 		F6A23F4A26C41D36008021BA /* RegistrationCancelled.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F4926C41D36008021BA /* RegistrationCancelled.swift */; };
 		F6A23F4E26C4202E008021BA /* cry.json in Resources */ = {isa = PBXBuildFile; fileRef = F6A23F4D26C4202E008021BA /* cry.json */; };
+		F6A23F5E26C4238E008021BA /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A23F5D26C4238E008021BA /* HomeViewModelTest.swift */; };
 		F6A4888C26C368F700A07C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888B26C368F700A07C44 /* AppDelegate.swift */; };
 		F6A4888E26C368F700A07C44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888D26C368F700A07C44 /* SceneDelegate.swift */; };
 		F6A4889026C368F700A07C44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4888F26C368F700A07C44 /* HomeViewController.swift */; };
-		F6A4889326C368F700A07C44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A4889126C368F700A07C44 /* Main.storyboard */; };
 		F6A4889526C368FB00A07C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A4889426C368FB00A07C44 /* Assets.xcassets */; };
 		F6A4889826C368FB00A07C44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A4889626C368FB00A07C44 /* LaunchScreen.storyboard */; };
 		F6A488A726C36C2900A07C44 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F6A488A626C36C2900A07C44 /* Lottie */; };
 		F6A488AA26C36DBA00A07C44 /* spacial-broccoli.json in Resources */ = {isa = PBXBuildFile; fileRef = F6A488A826C36DBA00A07C44 /* spacial-broccoli.json */; };
 		F6A488AB26C36DBA00A07C44 /* walking-broccoli.json in Resources */ = {isa = PBXBuildFile; fileRef = F6A488A926C36DBA00A07C44 /* walking-broccoli.json */; };
+		F6E34F3726C4B57100297990 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E34F3626C4B57100297990 /* HomeViewControllerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6A23F5826C42364008021BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6A4888026C368F700A07C44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A4888726C368F700A07C44;
+			remoteInfo = "Blinq-App";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F6A23F1E26C37D92008021BA /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -53,19 +64,29 @@
 		F6A23F4726C40843008021BA /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = confetti.json; path = "Blinq-App/Images/confetti.json"; sourceTree = SOURCE_ROOT; };
 		F6A23F4926C41D36008021BA /* RegistrationCancelled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCancelled.swift; sourceTree = "<group>"; };
 		F6A23F4D26C4202E008021BA /* cry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cry.json; path = "Blinq-App/Images/cry.json"; sourceTree = SOURCE_ROOT; };
+		F6A23F5326C42364008021BA /* Blinq-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blinq-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A23F5726C42364008021BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A23F5D26C4238E008021BA /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
 		F6A4888826C368F700A07C44 /* Blinq-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinq-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A4888B26C368F700A07C44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6A4888D26C368F700A07C44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F6A4888F26C368F700A07C44 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		F6A4889226C368F700A07C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6A4889426C368FB00A07C44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6A4889726C368FB00A07C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6A4889926C368FB00A07C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6A488A826C36DBA00A07C44 /* spacial-broccoli.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "spacial-broccoli.json"; path = "Blinq-App/Images/spacial-broccoli.json"; sourceTree = SOURCE_ROOT; };
 		F6A488A926C36DBA00A07C44 /* walking-broccoli.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "walking-broccoli.json"; path = "Blinq-App/Images/walking-broccoli.json"; sourceTree = SOURCE_ROOT; };
+		F6E34F3626C4B57100297990 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F6A23F5026C42364008021BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6A4888526C368F700A07C44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,10 +124,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F6A23F5426C42364008021BA /* Blinq-AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6A23F5726C42364008021BA /* Info.plist */,
+				F6A23F5D26C4238E008021BA /* HomeViewModelTest.swift */,
+				F6E34F3626C4B57100297990 /* HomeViewControllerTests.swift */,
+			);
+			path = "Blinq-AppTests";
+			sourceTree = "<group>";
+		};
 		F6A4887F26C368F700A07C44 = {
 			isa = PBXGroup;
 			children = (
 				F6A4888A26C368F700A07C44 /* Blinq-App */,
+				F6A23F5426C42364008021BA /* Blinq-AppTests */,
 				F6A4888926C368F700A07C44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				F6A4888826C368F700A07C44 /* Blinq-App.app */,
+				F6A23F5326C42364008021BA /* Blinq-AppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,7 +215,6 @@
 				F6A488A926C36DBA00A07C44 /* walking-broccoli.json */,
 				F6A4888B26C368F700A07C44 /* AppDelegate.swift */,
 				F6A4888D26C368F700A07C44 /* SceneDelegate.swift */,
-				F6A4889126C368F700A07C44 /* Main.storyboard */,
 				F6A4889426C368FB00A07C44 /* Assets.xcassets */,
 				F6A4889626C368FB00A07C44 /* LaunchScreen.storyboard */,
 				F6A4889926C368FB00A07C44 /* Info.plist */,
@@ -193,6 +225,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F6A23F5226C42364008021BA /* Blinq-AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A23F5A26C42364008021BA /* Build configuration list for PBXNativeTarget "Blinq-AppTests" */;
+			buildPhases = (
+				F6A23F4F26C42364008021BA /* Sources */,
+				F6A23F5026C42364008021BA /* Frameworks */,
+				F6A23F5126C42364008021BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6A23F5926C42364008021BA /* PBXTargetDependency */,
+			);
+			name = "Blinq-AppTests";
+			productName = "Blinq-AppTests";
+			productReference = F6A23F5326C42364008021BA /* Blinq-AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F6A4888726C368F700A07C44 /* Blinq-App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6A4889C26C368FB00A07C44 /* Build configuration list for PBXNativeTarget "Blinq-App" */;
@@ -222,6 +272,11 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					F6A23F5226C42364008021BA = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+						TestTargetID = F6A4888726C368F700A07C44;
+					};
 					F6A4888726C368F700A07C44 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -244,11 +299,19 @@
 			projectRoot = "";
 			targets = (
 				F6A4888726C368F700A07C44 /* Blinq-App */,
+				F6A23F5226C42364008021BA /* Blinq-AppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F6A23F5126C42364008021BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6A4888626C368F700A07C44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,7 +321,6 @@
 				F6A4889826C368FB00A07C44 /* LaunchScreen.storyboard in Resources */,
 				F6A488AA26C36DBA00A07C44 /* spacial-broccoli.json in Resources */,
 				F6A4889526C368FB00A07C44 /* Assets.xcassets in Resources */,
-				F6A4889326C368F700A07C44 /* Main.storyboard in Resources */,
 				F6A488AB26C36DBA00A07C44 /* walking-broccoli.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +328,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F6A23F4F26C42364008021BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A23F5E26C4238E008021BA /* HomeViewModelTest.swift in Sources */,
+				F6E34F3726C4B57100297990 /* HomeViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6A4888426C368F700A07C44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,15 +364,15 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		F6A4889126C368F700A07C44 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6A4889226C368F700A07C44 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		F6A23F5926C42364008021BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6A4888726C368F700A07C44 /* Blinq-App */;
+			targetProxy = F6A23F5826C42364008021BA /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		F6A4889626C368FB00A07C44 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -313,6 +384,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F6A23F5B26C42364008021BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TCT482N32;
+				INFOPLIST_FILE = "Blinq-AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chazzit.Blinq-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blinq-App.app/Blinq-App";
+			};
+			name = Debug;
+		};
+		F6A23F5C26C42364008021BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7TCT482N32;
+				INFOPLIST_FILE = "Blinq-AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chazzit.Blinq-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blinq-App.app/Blinq-App";
+			};
+			name = Release;
+		};
 		F6A4889A26C368FB00A07C44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -440,6 +554,7 @@
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 7TCT482N32;
 				INFOPLIST_FILE = "Blinq-App/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,6 +576,7 @@
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 7TCT482N32;
 				INFOPLIST_FILE = "Blinq-App/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,6 +592,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F6A23F5A26C42364008021BA /* Build configuration list for PBXNativeTarget "Blinq-AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A23F5B26C42364008021BA /* Debug */,
+				F6A23F5C26C42364008021BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F6A4888326C368F700A07C44 /* Build configuration list for PBXProject "Blinq-App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
