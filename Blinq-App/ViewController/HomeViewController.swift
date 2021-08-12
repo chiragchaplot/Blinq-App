@@ -49,7 +49,6 @@ class HomeViewController: UIViewController {
     lazy var submitButton: CustomButton = {
         var submitButton = CustomButton("Submit")
         submitButton.addTarget(self, action: #selector(submitDetails), for: .touchUpInside)
-        submitButton.isEnabled = false
         return submitButton
     }()
     
@@ -83,8 +82,9 @@ class HomeViewController: UIViewController {
 //            self.stopAnimation()
             if let _ = error {
                 DispatchQueue.main.async {
+                    self.backgroundAnimationView.removeFromSuperview()
                     let defaults = UserDefaults.standard
-                    let alert = UIAlertController(title: "Error", message: defaults.value(forKey: "error") as! String, preferredStyle: UIAlertController.Style.alert)
+                    let alert = UIAlertController(title: "Error", message: defaults.value(forKey: "error") as? String, preferredStyle: UIAlertController.Style.alert)
                     let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
                     alert.addAction(cancelAction)
                     self.present(alert, animated: true, completion: nil)
@@ -152,6 +152,7 @@ class HomeViewController: UIViewController {
         submitButton.topAnchor.constraint(equalTo: confirmEmailAddress.bottomAnchor, constant: 40).isActive = true
         submitButton.leadingAnchor.constraint(equalTo: view.centerXAnchor, constant: 20).isActive = true
         submitButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
+        submitButton.isEnabled = false
 
     }
     
