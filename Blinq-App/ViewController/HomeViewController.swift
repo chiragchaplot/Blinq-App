@@ -76,7 +76,7 @@ class HomeViewController: UIViewController {
     private func submitDetails(){
         print("Submit Button Pressed")
         showAnimation()
-        let param = ["name":fullNameTextField.text, "email":emailAddress.text]
+        let param = ["name":fullNameTextField.text, "email":emailAddress.text?.lowercased()]
         homeVM.submitInvitation(param: param as [String : Any], completion: {
             (result, error) in
 //            self.stopAnimation()
@@ -85,7 +85,7 @@ class HomeViewController: UIViewController {
                     self.backgroundAnimationView.removeFromSuperview()
                     let defaults = UserDefaults.standard
                     let alert = UIAlertController(title: "Error", message: defaults.value(forKey: "error") as? String, preferredStyle: UIAlertController.Style.alert)
-                    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                    let cancelAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
                     alert.addAction(cancelAction)
                     self.present(alert, animated: true, completion: nil)
                 }
